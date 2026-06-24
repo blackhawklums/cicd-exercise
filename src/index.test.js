@@ -13,7 +13,7 @@ describe('GET /greet', () => {
   it('greets World by default', async () => {
     const res = await request(app).get('/greet');
     expect(res.statusCode).toBe(200);
-    expect(res.body.message).toBe('Hello, World!');
+    expect(res.body.message).toBe('Hello, World! 👋');
   });
 
   it('greets a named person', async () => {

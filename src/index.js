@@ -14,7 +14,7 @@ app.get('/health', (req, res) => {
 
 app.get('/greet', (req, res) => {
   const name = req.query.name || 'World';
-  res.json({ message: `Hello, ${name}!` });
+  res.json({ message: `Hello, ${name}! 👋` });
 });
 
 if (require.main === module) {
