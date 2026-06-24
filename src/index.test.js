@@ -19,6 +19,6 @@ describe('GET /greet', () => {
   it('greets a named person', async () => {
     const res = await request(app).get('/greet?name=Alice');
     expect(res.statusCode).toBe(200);
-    expect(res.body.message).toBe('Hello, Alice!');
+    expect(res.body.message).toBe('Hello, Alice! 👋');
   });
 });
