@@ -25,6 +25,8 @@ jobs:
     name: Build & Push Release Image
     runs-on: ubuntu-latest
     needs: test
+    permissions:
+      contents: write
     env:
       IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/cicd-exercise
     outputs:
